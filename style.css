@@ -1,60 +1,67 @@
 body {
+  font-family: "Orbitron", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: bisque;
-  padding: 30px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
-.clicker-header {
-  text-align: center;
+.clicker-body {
+  background-image: url(./images/field-background.jpg);
+  height: 100%;
+  background-size: cover;
+  padding: 24px;
 }
+
 .clicker-title {
+  text-align: center;
   font-size: 32px;
-  margin: 0;
+  color: beige;
+  font-weight: 700;
 }
 
 .clicker-descr {
-  margin: 0;
-  font-size: 18px;
+  text-align: center;
+  color: beige;
+  margin-top: 16px;
+  font-weight: 400;
 }
 
 .clicker-box {
-  border: 1px solid #000000;
-  width: 500px;
-  height: 500px;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  background-color: aliceblue;
-}
-
-.clicker-counter {
-  font-size: 32px;
-}
-
-.clicker-reset {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  padding: 8px 10px;
-  background-color: aqua;
-  color: aliceblue;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
+  justify-content: center;
+  padding-top: 200px;
 }
 
 .clicker-timer {
-  padding: 20px 25px;
-  border: 2px solid rgb(56, 196, 201);
   font-size: 32px;
+  color: beige;
+  font-weight: 600;
+}
+
+.clicker-span {
+  margin-top: 16px;
+  font-size: 32px;
+  color: beige;
+  font-weight: 600;
+}
+
+.clicker-btn {
+  padding: 24px 64px;
+  margin-top: 16px;
+  border: none;
   border-radius: 10px;
-  background-color: aliceblue;
-  margin-left: 96px;
+  background-color: crimson;
+  color: beige;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 7px 11px 36px -11px rgba(61, 11, 8, 1);
 }

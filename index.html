@@ -3,28 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
-    <title>Clicker online</title>
+    <title>Clicker | WEB GAME</title>
   </head>
-  <body>
-    <!-- Title -->
-    <header class="clicker-header">
-      <h1 class="clicker-title">WELCOME TO CLICKER!</h1>
-      <p class="clicker-descr">Test your clicks!</p>
-    </header>
-    <!-- Clicker -->
+  <body class="clicker-body">
     <main class="clicker-main">
-      <span class="clicker-timer" id="timer">:59</span>
-      <div class="clicker-box js-box">
-        <span class="clicker-counter js-clicker">Let's click!</span>
-
-        <span class=""></span>
+      <h1 class="clicker-title">CLick, click, click</h1>
+      <p class="clicker-descr">Test your clicks</p>
+      <div class="clicker-box" id="clicker">
+        <span class="clicker-timer" id="timer">30</span>
+        <button type="button" class="clicker-btn" id="js-button">Click!</button>
+        <span class="clicker-span" id="counter">0</span>
       </div>
-      <button type="reset" href="./index.html" class="clicker-reset js-reset">
-        Reset
-      </button>
     </main>
 
-    <script src="./js-clicker.js" type="module"></script>
+    <script type="module" src="./js-clicker.js"></script>
   </body>
 </html>
